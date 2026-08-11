@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es-PR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Generador local de formularios CRIM AS-52 y AS-74">
+  <title>CRIM · Formularios AS-52 y AS-74</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header"><div>
+    <p class="eyebrow">Cortesía de Fernández CPA &amp; Business Consultant LLC</p>
+    <h1>Formularios CRIM</h1>
+    <p class="subhead">AS-52 · Cambio de dueño &nbsp; / &nbsp; AS-74 · Dueños en comunidad</p>
+  </div><span class="local-badge">Procesamiento local</span></header>
+  <main>
+    <aside class="privacy"><strong>Privacidad:</strong> los datos y los números de Seguro Social se procesan en este navegador. No se envían ni se guardan en el servidor.</aside>
+    <aside class="privacy"><strong>Aviso importante:</strong> esta herramienta es solo una ayuda para preparar documentos y no constituye asesoramiento legal, contributivo ni profesional. Consulte con su abogado y/o CPA para confirmar la corrección, integridad y pertinencia del contenido generado. Fernández CPA &amp; Business Consultant LLC no se responsabiliza por errores, omisiones, uso indebido ni por la aceptación de documentos por una agencia gubernamental. Esta aplicación no está afiliada ni representa al CRIM.</aside>
+    <nav class="tabs" aria-label="Formularios"><button class="tab active" data-tab="as52">AS-52 · Cambio de dueño</button><button class="tab" data-tab="as74">AS-74 · Comunidad / Herencia</button></nav>
+    <section id="as52" class="panel active">
+      <div class="panel-top"><div><h2>Solicitud de cambio de dueño</h2><p>Complete los datos y descargue el PDF oficial rellenado.</p></div><div class="actions"><button class="secondary" data-json="as52">Importar JSON</button><button class="secondary" data-export="as52">Exportar JSON</button><button class="ghost" data-clear="as52">Limpiar</button></div></div>
+      <form id="as52-form" novalidate></form>
+      <div class="submit-row"><button class="generate" data-generate="as52">Generar PDF AS-52</button></div>
+    </section>
+    <section id="as74" class="panel">
+      <div class="panel-top"><div><h2>Hoja de información de dueños en comunidad</h2><p>Hasta diez dueños por hoja. Para más, cree una hoja adicional.</p></div><div class="actions"><button class="secondary" data-json="as74">Importar JSON</button><button class="secondary" data-export="as74">Exportar JSON</button><button class="ghost" data-clear="as74">Limpiar</button></div></div>
+      <form id="as74-form" novalidate></form>
+      <div class="submit-row"><button class="generate blue" data-generate="as74">Generar PDF AS-74</button></div>
+    </section>
+  </main>
+  <dialog id="notices"><article><h2>Revise estos avisos</h2><ul id="notice-list"></ul><p>Puede corregir los datos o generar el PDF de todos modos.</p><div class="dialog-actions"><button value="cancel">Volver a editar</button><button class="generate" id="continue-pdf" value="default">Generar de todos modos</button></div></article></dialog>
+  <template id="file-template"><input type="file" accept="application/json"></template>
+  <script src="assets/vendor/pdf-lib.min.js"></script><script src="assets/app.js"></script>
+</body></html>
